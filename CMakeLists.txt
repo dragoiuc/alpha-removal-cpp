@@ -6,9 +6,23 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+add_library(stb STATIC
+    libraries/stb/stb_impl.cpp
+)
+
+target_include_directories(stb SYSTEM PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/libraries/stb
+)
+
 add_executable(alpha_removal
     src/main.cpp
 )
+
+target_link_libraries(alpha_removal
+    PRIVATE
+        stb
+)
+
 
 include(CTest)
 
