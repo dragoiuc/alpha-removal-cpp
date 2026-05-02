@@ -1,5 +1,7 @@
 # An Alpha Removal Tool
 ## End Goal for this Tool
+Eventually, I intend to merge this tool into my Game Engine - DragoEngine - to allow quick pixel art iteration via AI.
+
 At it's core, it will take in a image file of some format, and spit out another image, but with an attempt made at correcting incorrect alpha values within that image, to remove false backgrounds.
 
 ## Popular Use Cases
