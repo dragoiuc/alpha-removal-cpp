@@ -1,5 +1,5 @@
 # An Alpha Removal Tool
-## What it does
+## End Goal for this Tool
 At it's core, it will take in a image file of some format, and spit out another image, but with an attempt made at correcting incorrect alpha values within that image, to remove false backgrounds.
 
 ## Popular Use Cases
